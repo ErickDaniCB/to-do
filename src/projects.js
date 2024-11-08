@@ -24,6 +24,12 @@ export class Project {
   removeTask(taskId) {
     this.tasks = this.tasks.filter((tasks) => tasks.id !== taskId);
   }
+
+  editProject(prop, edit){
+    if (prop in this) {
+      this[prop] = edit;
+    }
+  }
 }
 
 export class ProjectManager { //Una clase no necesariamente debe ser algo que se vaya a repetir, puede

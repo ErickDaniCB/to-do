@@ -13,4 +13,10 @@ export class Task {
     // Por lo tanto, se declara como instance method fuera del constructor.
     // (se guarda en el prototipo de la clase).
   }
+
+  editTask(prop, edit){
+    if (prop in this) {
+      this[prop] = edit;
+    }
+  }
 }

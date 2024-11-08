@@ -9,18 +9,17 @@ Manager.addProject("Ejercicio", "Pain = Gain");
 
 const project = Manager.getProject(1);
 
+project.editProject("description", "Light weight")
+
 console.log(project);
 
 project.addTask("Ir al gym", "Morelos GYM", "Diario 8am", "Urgente");
 project.addTask("Correr con Pobi", "En el parque", "Cada dos días", "Opcional");
 
-console.log(project.getTask(0));
+const task1 = project.getTask(0);
 
-project.removeTask(0);
+task1.title = "GYM";
+task1.editTask("description", "Crossfit")
 
-console.log(project.getTask(0));
-
-Manager.removeProject(0);
-
-console.log(Manager.getProject(0))
-console.log(Manager.getProject(1))
+console.log(task1);
+console.log(project.getTask(0))
