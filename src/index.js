@@ -1,6 +1,9 @@
 // index.js
 import "./styles.css";
-import { Project, ProjectManager } from "./projects";
+import { ProjectManager } from "./projects";
+import { projectDOM } from "./projectsDOM";
+
+projectDOM();// Se llama a la función que contiene el código que queremos exponer de projectDOM;
 
 const Manager = new ProjectManager();
 

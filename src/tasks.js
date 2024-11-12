@@ -6,6 +6,7 @@ export class Task {
     this.description = description;
     this.due = due;
     this.prio = prio;
+    this.done = false; 
     // Nunca regreses nada del constructor que no sea un primario.
 
     // Técnicamente puedes definir métodos aquí dentro, pero eso crearía

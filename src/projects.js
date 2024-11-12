@@ -33,7 +33,7 @@ export class Project {
 }
 
 export class ProjectManager { //Una clase no necesariamente debe ser algo que se vaya a repetir, puede
-  // usarse para denominar una única instancia que se encargue de contener a otra(s).
+  // usarse para denominar una única instancia que se encargue de contener/modificar a otra(s).
   constructor() {
     this.projects = [];
   }

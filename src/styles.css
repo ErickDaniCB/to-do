@@ -1,4 +1,21 @@
 * {
   box-sizing: border-box;
+  outline: 1px solid red;
+  margin: 0;
 }
-  
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+side {
+  flex-grow: 0.2;
+}
+
+content {
+  flex-grow: 0.8;
+}
+
+/* Add project / Modal */
