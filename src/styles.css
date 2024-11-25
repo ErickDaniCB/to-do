@@ -12,6 +12,7 @@ body {
 
 side {
   flex-grow: 0.2;
+  background-color: aliceblue;
 }
 
 content {
